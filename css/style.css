@@ -1,0 +1,311 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+
+.container-new {
+    width: 75% !important;
+    margin: 0 auto;
+}
+
+
+.logo {
+    height: 80px;    
+}
+
+.logo-text {
+    font-size: 1.4rem;
+}
+
+.nav-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.banner-heading {
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: justify;
+}
+
+.banner-text-bold {
+    font-weight: 700;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-apply {
+    font-size: 1.42rem;
+    text-transform: uppercase;
+    /* background-color: blue; */
+    /*background: linear-gradient(to right, #373b44, #4286f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-weight: 600;
+    padding: .4rem 2rem;
+    border-radius: 35px;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: all .2s;
+}
+
+.btn-apply:hover {
+    transform: scale(1.06) translateX(2px)    
+}
+
+.our-school {
+    min-height: 45vh;
+    background-image: linear-gradient(rgba(18, 35, 77, 0.788), rgba(42, 40, 177, 0.822)), 
+    url(../img/Danbo-primary-trumpet.JPG);
+    padding: 3rem 1.5rem;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.our-school__heading {
+    font-size: 2rem;
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.our-school__text {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.virtual {
+    margin-top: 7rem;
+}
+.virtual-img {
+    height: 22rem;
+    width: 22rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.facts {
+    margin-top: 4rem;
+    margin-bottom:  4rem;
+}
+
+.facts__heading {
+    font-family: 'Courgette', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.facts-box__top {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    /* height: 197px; */
+}
+
+.facts-box__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.facts-box__top__double {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.facts-box__top__double-img {
+    width: 60%;
+}
+
+.facilities-img {
+    width: 10%; 
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.modal-form {
+    position: relative;
+}
+
+.modal-close {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.modal-form-input {
+    border: none !important;
+    background-color: white !important;
+    margin-bottom: 1.5rem !important;
+    padding-left: 1rem !important;
+    border-radius: 1.5rem !important;
+    color: grey;
+    font-size: 1.4rem;
+}
+
+.modal-form-input:focus {
+    outline: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+
+.modal-form-input::placeholder {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.btn-modal {
+    width: fit-content;
+    border: none;
+    padding-top: .7rem  !important;
+    padding-bottom: .7rem   !important;
+    margin-top: -7px;
+    font-size: 1.2rem !important;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.modal-close:hover {
+    background-color: #d50000;
+    color:  white;
+}
+
+
+@media only screen and (max-width: 580px) {
+    
+    .curriculum-box{
+        padding: 0 0 0 21% !important;
+    }
+
+    .curriculum--heading {
+        margin-left: 20% !important;
+    }
+
+    .facilities-box {
+        margin-top: 2.5rem;
+        padding: 0 0 0 10% !important;
+    }
+    
+    .facilities-img {
+        width: 18%;
+    }
+
+    .center-on-mobile-day {
+        margin-left: -3rem !important;
+    }
+
+    .container-new {
+        width: 90% !important;
+    }
+
+    .modal {
+        padding: .3rem !important;
+    }
+
+    .btn-modal {
+        font-size: 1rem;
+    }
+
+    .modal-form-input {
+        border-bottom: .2rem !important;
+        font-size: 1.1rem !important;
+        padding-left: 0;
+        border: .5px solid #F7F7F7;
+        margin-bottom: 12px !important;
+        height: 2rem !important;
+    }
+
+    .modal-heading {
+        font-size: 1.4rem;
+    }
+
+    .modal-form-input::placeholder {
+        font-size: 1rem !important;
+    }
+
+    .btn-modal {
+        font-size: 1rem !important;
+        padding-right: 11px;
+        padding-left: 11px;
+        margin-top: 15px !important;
+        /* padding-top: ; */
+        /* margin-top: -.1px; */
+    }
+
+    
+}
+
+@media only screen and (max-width: 423px) {
+    
+    .curriculum-box{
+        margin-left: 0% !important;
+    }
+    
+}
+
+@media only screen and (max-width: 323px) {
+    
+    .center-on-mobile{
+       margin-left: 5% !important;
+       /* display: flex !important; */
+    }
+    
+}
